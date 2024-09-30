@@ -25,6 +25,11 @@ function TicTacToe() {
                 <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
                 <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
             </div>
+            <br />
+            <div className='flex justify-center'>
+                <button className='bg-gray-800 p-4 text-green-400 font-medium
+                w-40 rounded-3xl'>Reset</button>
+            </div>
         </>
     )
 }
