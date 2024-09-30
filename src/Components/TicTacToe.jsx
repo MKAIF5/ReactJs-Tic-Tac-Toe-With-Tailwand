@@ -17,7 +17,13 @@ function TicTacToe() {
 
         if (count % 2 === 0) {
             e.target.innerHTML = `<img src='${cross_icon}'>`
-            data[num] = x
+            data[num] = "X"
+            setCount(++count);
+        }
+        else {
+            e.target.innerHTML = `<img src='${cross_icon}'>`
+            data[num] = "O"
+            setCount(++count);
         }
     }
 
@@ -29,19 +35,28 @@ function TicTacToe() {
             </div>
 
             <div className='flex gap-1 justify-center'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer
+                ' onClick={(e) => { toggle(e, 0) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 1) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 2) }}></div>
             </div>
             <div className='flex gap-1 justify-center my-1'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 3) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 4) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 5) }}></div>
             </div>
             <div className='flex gap-1 justify-center my-1'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 6) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 7) }}></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'
+                    onClick={(e) => { toggle(e, 8) }}></div>
             </div>
             <br />
             <div className='flex justify-center'>
