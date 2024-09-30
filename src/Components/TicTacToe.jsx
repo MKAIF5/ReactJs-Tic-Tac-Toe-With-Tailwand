@@ -11,19 +11,19 @@ function TicTacToe() {
             </div>
 
             <div className='flex gap-1 justify-center'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
             </div>
-            <div className='flex gap-1 justify-center'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
+            <div className='flex gap-1 justify-center my-1'>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
             </div>
-            <div className='flex gap-1 justify-center'>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
-                <div className='bg-gray-800 p-14 w-20 rounded-md'></div>
+            <div className='flex gap-1 justify-center my-1'>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
+                <div className='bg-gray-800 p-14 w-20 rounded-md cursor-pointer'></div>
             </div>
         </>
     )
