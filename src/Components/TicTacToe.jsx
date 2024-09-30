@@ -17,13 +17,13 @@ function TicTacToe() {
 
         if (count % 2 === 0) {
             e.target.innerHTML = `<img src='${cross_icon}'>`
-            data[num] = "X"
-            setCount(++count);
+            data[num] = "x"
+            setCount(count + 1);
         }
         else {
-            e.target.innerHTML = `<img src='${cross_icon}'>`
-            data[num] = "O"
-            setCount(++count);
+            e.target.innerHTML = `<img src='${cricle_icon}'>`
+            data[num] = "o"
+            setCount(count + 1);
         }
     }
 
