@@ -9,8 +9,16 @@ function TicTacToe() {
     const [count, setCount] = useState(0);
     const [lock, setLock] = useState(false);
 
-    const toggle = (w, num) => {
+    const toggle = (e, num) => {
 
+        if (lock) {
+            return 0;
+        }
+
+        if (count % 2 === 0) {
+            e.target.innerHTML = `<img src='${cross_icon}'>`
+            data[num] = x
+        }
     }
 
     return (
