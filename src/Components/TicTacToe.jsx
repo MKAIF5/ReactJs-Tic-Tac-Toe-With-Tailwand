@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cricle_icon from "./Assets/circle.png";
 import cross_icon from "./Assets/cross.png";
 
+let data = ["", "", "", "", "", "", "", "", ""]
+
 function TicTacToe() {
+
+    const [count, setCount] = useState(0);
+    const [lock, setLock] = useState(false);
+
+    const toggle = (w, num) => {
+
+    }
+
     return (
         <>
             <div>
